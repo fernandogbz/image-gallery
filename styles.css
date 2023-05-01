@@ -37,3 +37,8 @@
     font-size: 1.5rem;
     margin-top: 8px;
   }
+
+  .search .search-box {
+    height: 55px;
+    margin: 45px 0;
+  }
