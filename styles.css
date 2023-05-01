@@ -68,3 +68,7 @@
     gap: 15px;
     columns: 5 340px;
   }
+
+  .images img {
+    width: 100%;
+  }
