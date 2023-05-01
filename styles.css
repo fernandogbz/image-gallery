@@ -18,3 +18,9 @@
     object-fit: cover;
     position: absolute;
   }
+
+  .search .content {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+  }
