@@ -41,6 +41,7 @@
   .search .search-box {
     height: 55px;
     margin: 45px 0;
+    position: relative;
   }
 
   .search-box i {
