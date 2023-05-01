@@ -24,6 +24,7 @@
 
   .search .content {
     color: #fff;
+    text-align: center;
     position: relative;
     z-index: 2;
   }
