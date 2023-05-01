@@ -63,3 +63,8 @@
     padding-left: 55px;
     border-radius: 5px;
   }
+
+  .gallery .images {
+    gap: 15px;
+    columns: 5 340px;
+  }
