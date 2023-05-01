@@ -24,3 +24,8 @@
     position: relative;
     z-index: 2;
   }
+
+  .search h1 {
+    font-size: 2.65rem;
+    font-weight: 600;
+  }
