@@ -156,3 +156,8 @@
     top: 50%;
     transform: translate(-50%,-50%);
   }
+
+  .wrapper .preview-img .img {
+    max-height: 65vh;
+    max-width: 90vh;
+  }
