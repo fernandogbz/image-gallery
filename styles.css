@@ -84,6 +84,7 @@
 
   .images .card {
     display: flex;
+    overflow: hidden;
     position: relative;
     list-style: none;
     margin-bottom: 14px;
@@ -92,13 +93,18 @@
 
   .images .card .details {
     position: absolute;
-    bottom: 0;
+    bottom: -100px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
+    transition: bottom 0.1s ease;
     background-color: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  }
+
+  .images .card:hover .details {
+    bottom: 0;
   }
 
   .card .details .photographer {
