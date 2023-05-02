@@ -1,3 +1,5 @@
+const imagesWrapper = document.querySelector(".images");
+
 // Getting apiKey
 const apiKey = "lm6LXRXyUDilPNMvBkDX5ac8YpzOTWERwRwswvnHNP0mGV1auPQ6F1KL";
 // We'll load 15 images on every API call
@@ -6,7 +8,8 @@ const perPage = 15;
 let = currentPage = 1;
 
 const generateHTML = (images) => {
-  images.map(img =>
+  // Making li of all fetched images and adding them to the existing image wrapper
+  imagesWrapper.innerHTML += images.map(img =>
     `<li class="card">
     <img src="${img.src.large2x}" alt="img" />
     <div class="details">
