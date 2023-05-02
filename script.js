@@ -8,6 +8,10 @@ const perPage = 15;// We'll load 15 images on every API call
 let = currentPage = 1; // Later, we'll increment the currentPage on load more button click
 let searchTerm = null;
 
+const downloadImg = (imgURL) => {
+  console.log(imgURL); // Getting image URL of selected image to download
+}
+
 const generateHTML = (images) => {
   // Making li of all fetched images and adding them to the existing image wrapper
   imagesWrapper.innerHTML += images.map(img =>
