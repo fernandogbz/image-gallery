@@ -234,7 +234,7 @@
   
   .profile-btn {
     position: relative;
-    left: 90%;
+    left: 85%;
     margin: 3px;
     background-color: transparent;
     display: flex;
@@ -272,3 +272,27 @@
     margin-bottom: 30px;
   }
   
+
+  @media screen and (max-width: 940px){
+    .profile-btn {
+      left: 75%;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    .profile-btn {
+      left: 60%;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+    .profile-btn {
+      left: 50%;
+    }
+  }
+
+  @media screen and (max-width: 380px){
+    .profile-btn {
+      left: 45%;
+    }
+  }
