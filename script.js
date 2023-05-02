@@ -9,7 +9,10 @@ let = currentPage = 1; // Later, we'll increment the currentPage on load more bu
 let searchTerm = null;
 
 const downloadImg = (imgURL) => {
-  console.log(imgURL); // Getting image URL of selected image to download
+  //Getting blob object of image to download it
+  fetch(imgURL).then(res => res.blob()).then(file => {
+    console.log(file)
+  }).catch(() => alert("Failed to download image!"));
 }
 
 const generateHTML = (images) => {
