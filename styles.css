@@ -109,6 +109,10 @@
     margin-right: 10px;
   }
 
+  .details .photographer span {
+    font-size: 1.05rem;
+  }
+
   .images img {
     width: 100%;
   }
