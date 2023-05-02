@@ -9,11 +9,12 @@ let = currentPage = 1; // Later, we'll increment the currentPage on load more bu
 let searchTerm = null;
 
 const downloadImg = (imgURL) => {
-  //Getting blob object of image to download it
+  //Converting received img to blob, creating its download link, & downloading it
   fetch(imgURL).then(res => res.blob()).then(file => {
     const a = document.createElement("a");
     a.href = URL.createObjectURL(file); // URL.createObjectURL() creates URL of passed object
     a.download = new Date().getTime(); // Passing current time in miliseconds as <a> tag download value
+    a.click();
   }).catch(() => alert("Failed to download image!"));
 }
 
