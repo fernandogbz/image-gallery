@@ -1,4 +1,5 @@
 const imagesWrapper = document.querySelector(".images");
+const loadMoreBtn = document.querySelector(".load-more");
 
 // Getting apiKey
 const apiKey = "lm6LXRXyUDilPNMvBkDX5ac8YpzOTWERwRwswvnHNP0mGV1auPQ6F1KL";
