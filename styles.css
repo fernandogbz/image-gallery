@@ -101,7 +101,12 @@
   }
 
   .card .details .photographer {
-    color: #fff;
+    color: #000000;
+  }
+
+  .details .photographer i {
+    font-size: 1.4rem;
+    margin-right: 10px;
   }
 
   .images img {
