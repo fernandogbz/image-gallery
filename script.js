@@ -25,6 +25,12 @@ const showLightbox = (name, img ) => {
   lightbox.querySelector("img").src = img;
   lightbox.querySelector("span").innerText = name;
   lightbox.classList.add("show");
+  document.body.style.overflow = "hidden"; // Hide the scrollbar while lightbox is shown
+}
+
+const hideLightbox = () => {
+  lightbox.classList.remove("show");
+  document.body.style.overflow = "auto";
 }
 
 const generateHTML = (images) => {
