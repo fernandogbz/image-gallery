@@ -36,7 +36,7 @@ const getImages = (apiURL) => {
     
   loadMoreBtn.innerText = "Load More";
   loadMoreBtn.classList.remove("disabled");
-  })
+  }).catch(() => alert("Failed to load images!"));
 }
 
 const loadMoreImages = () => {
