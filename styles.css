@@ -155,10 +155,17 @@
     left: 50%;
     top: 50%;
     width: 100%;
+    padding: 20px;
     max-width: 850px;
     background-color: #fff;
     border-radius: 5px;
     transform: translate(-50%,-50%);
+  }
+
+  .wrapper header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .preview-img {
