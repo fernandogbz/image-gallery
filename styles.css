@@ -253,7 +253,7 @@
   }
   
   .profile-btn span {
-    color: var(--main-color);
+    color: #333;
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
@@ -263,7 +263,7 @@
   .footer, .footer a {
     text-align: center;
     text-decoration: none;
-    color: var(--main-color);
+    color: #333;
   }
   
   .footer a img {
@@ -273,9 +273,15 @@
   }
   
 
-  @media screen and (max-width: 940px){
+  @media screen and (max-width: 1100px){
     .profile-btn {
       left: 75%;
+    }
+  }
+
+  @media screen and (max-width: 840px){
+    .profile-btn {
+      left: 70%;
     }
   }
 
