@@ -26,10 +26,16 @@ const generateHTML = (images) => {
 
 const getImages = (apiURL) => {
   // Fetching images by API call with authorization header
+  // Change the button state to loading while the image is fetching
+  loadMoreBtn.innerText = "Loading...";
+  loadMoreBtn.classList.add("disabled");
   fetch(apiURL, {
     headers: {Authorization: apiKey}
   }).then(res => res.json()).then(data =>{
     generateHTML(data.photos);
+    
+  loadMoreBtn.innerText = "Load More";
+  loadMoreBtn.classList.remove("disabled");
   })
 }
 
