@@ -19,14 +19,16 @@ const downloadImg = (imgURL) => {
   }).catch(() => alert("Failed to download image!"));
 }
 
-const showLightbox = () => {
+const showLightbox = (name, img ) => {
+  lightbox.querySelector("img").src = img;
+  lightbox.querySelector("span").innerText = name;
   lightbox.classList.add("show");
 }
 
 const generateHTML = (images) => {
   // Making li of all fetched images and adding them to the existing image wrapper
   imagesWrapper.innerHTML += images.map(img =>
-    `<li class="card" onclick="showLightbox()">
+    `<li class="card" onclick="showLightbox('${img.photographer}', '${img.src.large2x}')">
       <img src="${img.src.large2x}" alt="img" />
       <div class="details">
         <div class="photographer">
