@@ -33,6 +33,12 @@ const getImages = (apiURL) => {
   })
 }
 
+const loadMoreImages = () => {
+  currentPage++; // Increment currentPage by 1
+  let apiURL = `https://api.pexels.com/v1/curated?page=${currentPage}&per_page=${perPage}`;
+  getImages(apiURL);
+}
+
 getImages(`https://api.pexels.com/v1/curated?page=${currentPage}&per_page=${perPage}`);
 
 loadMoreBtn.addEventListener("click",loadMoreImages);
