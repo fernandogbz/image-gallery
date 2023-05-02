@@ -2,12 +2,11 @@ const imagesWrapper = document.querySelector(".images");
 const loadMoreBtn = document.querySelector(".load-more");
 const searchInput = document.querySelector(".search-box input");
 
-// Getting apiKey
-const apiKey = "lm6LXRXyUDilPNMvBkDX5ac8YpzOTWERwRwswvnHNP0mGV1auPQ6F1KL";
-// We'll load 15 images on every API call
-const perPage = 15;
-// Later, we'll increment the currentPage on load more button click
-let = currentPage = 1;
+// API key, paginations, searchTerm variables
+const apiKey = "lm6LXRXyUDilPNMvBkDX5ac8YpzOTWERwRwswvnHNP0mGV1auPQ6F1KL"; // Getting apiKey
+const perPage = 15;// We'll load 15 images on every API call
+let = currentPage = 1; // Later, we'll increment the currentPage on load more button click
+let searchTerm = null;
 
 const generateHTML = (images) => {
   // Making li of all fetched images and adding them to the existing image wrapper
