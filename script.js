@@ -46,6 +46,11 @@ const loadMoreImages = () => {
   getImages(apiURL);
 }
 
+const loadSearchImages = (e) => {
+  if(e.key === "Enter") {
+    console.log("Enter key pressed");
+  }
+}
 
 getImages(`https://api.pexels.com/v1/curated?page=${currentPage}&per_page=${perPage}`);
 
