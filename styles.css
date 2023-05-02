@@ -83,6 +83,7 @@
   }
 
   .images .card {
+    position: relative;
     list-style: none;
     margin-bottom: 14px;
     border-radius: 4px;
@@ -91,6 +92,12 @@
   .images .card .details {
     position: absolute;
     bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
   }
 
   .images img {
