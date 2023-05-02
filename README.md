@@ -12,7 +12,9 @@ Technologies:
 <br>
 • The <a href="https://www.pexels.com/api/">Pexels API</a>
 <br>
+<br>
 Without any external libraries or frameworks.
+<br>
 <br>
 Link: https://fernandogbz.github.io/image-gallery/
 <br>
