@@ -22,7 +22,7 @@ const downloadImg = (imgURL) => {
 }
 
 const showLightbox = (name, img ) => {
-  // Showing lightbox and setting img source and name
+  // Showing lightbox and setting img source and name and button attribute
   lightbox.querySelector("img").src = img;
   lightbox.querySelector("span").innerText = name;
   downloadImgBtn.setAttribute("data-img", img) // Storing the image url as a btn attribute, so we can download it later
@@ -93,4 +93,4 @@ getImages(`https://api.pexels.com/v1/curated?page=${currentPage}&per_page=${perP
 loadMoreBtn.addEventListener("click",loadMoreImages);
 searchInput.addEventListener("keyup",loadSearchImages);
 closeBtn.addEventListener("click", hideLightbox);
-// downloadImgBtn.addEventListener("click", () =>);
+downloadImgBtn.addEventListener("click", (e) => downloadImg(e.target.dataset.img)); // Passing btn img attribute value as argument to the downloadImg function
