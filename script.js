@@ -20,6 +20,7 @@ const downloadImg = (imgURL) => {
 }
 
 const showLightbox = (name, img ) => {
+  // Showing lightbox and setting img source and name
   lightbox.querySelector("img").src = img;
   lightbox.querySelector("span").innerText = name;
   lightbox.classList.add("show");
