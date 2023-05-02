@@ -5,5 +5,13 @@ const perPage = 15;
 // Later, we'll increment the currentPage on load more button click
 let = currentPage = 1;
 
+const getImages = (apiURL) => {
+  // Fetching images by API call with authorization header
+  fetch(apiURL, {
+    headers: {Authorization: apiKey}
+  }).then(res => res.json()).then(data =>{
+    console.log(data);
+  })
+}
 
 getImages(`https://api.pexels.com/v1/curated?page=${currentPage}&per_page=${perPage}`);
