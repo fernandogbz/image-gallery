@@ -45,12 +45,14 @@ const generateHTML = (images) => {
           <i class="uil uil-camera"></i>
           <span>${img.photographer}</span>
         </div>
-        <button onclick="downloadImg('${img.src.large2x}');event.stopPropagation();"> //stopPropagation() prevents propagation of the same event from being called
+        <button onclick="downloadImg('${img.src.large2x}');event.stopPropagation();">
             <i class="uil uil-import"></i>
         </button>
       </div>
   </li>`
     ).join("");
+
+    //stopPropagation() prevents propagation of the same event from being called
 }
 
 const getImages = (apiURL) => {
