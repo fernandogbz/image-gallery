@@ -12,14 +12,16 @@ const generateHTML = (images) => {
   // Making li of all fetched images and adding them to the existing image wrapper
   imagesWrapper.innerHTML += images.map(img =>
     `<li class="card">
-    <img src="${img.src.large2x}" alt="img" />
-    <div class="details">
-      <div class="photographer">
-        <i class="uil uil-camera"></i>
-        <span>${img.photographer}</span>
+      <img src="${img.src.large2x}" alt="img" />
+      <div class="details">
+        <div class="photographer">
+          <i class="uil uil-camera"></i>
+          <span>${img.photographer}</span>
+        </div>
+        <button onclick="downloadImg('${img.src.large2x}')">
+            <i class="uil uil-import"></i>
+        </button>
       </div>
-      <button><i class="uil uil-import"></i></button>
-    </div>
   </li>`
     ).join("");
 }
