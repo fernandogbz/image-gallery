@@ -3,6 +3,7 @@ const loadMoreBtn = document.querySelector(".load-more");
 const searchInput = document.querySelector(".search-box input");
 const lightbox = document.querySelector(".lightbox");
 const closeBtn = lightbox.querySelector(".uil-times");
+const downloadImgBtn = lightbox.querySelector(".uil-import");
 
 // API key, paginations, searchTerm variables
 const apiKey = "lm6LXRXyUDilPNMvBkDX5ac8YpzOTWERwRwswvnHNP0mGV1auPQ6F1KL"; // Getting apiKey
