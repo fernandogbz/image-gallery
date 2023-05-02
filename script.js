@@ -84,3 +84,4 @@ getImages(`https://api.pexels.com/v1/curated?page=${currentPage}&per_page=${perP
 
 loadMoreBtn.addEventListener("click",loadMoreImages);
 searchInput.addEventListener("keyup",loadSearchImages);
+closeBtn.addEventListener("click", hideLightbox);
