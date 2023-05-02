@@ -101,7 +101,9 @@
   }
 
   .card .details .photographer {
-    color: #000000;
+    color: #000000; /*Change to white */
+    display: flex;
+    align-items: center;
   }
 
   .details .photographer i {
