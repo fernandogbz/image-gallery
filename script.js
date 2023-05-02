@@ -11,7 +11,8 @@ let searchTerm = null;
 const downloadImg = (imgURL) => {
   //Getting blob object of image to download it
   fetch(imgURL).then(res => res.blob()).then(file => {
-    console.log(file)
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(file); // URL.createObjectURL() creates URL of passed object
   }).catch(() => alert("Failed to download image!"));
 }
 
