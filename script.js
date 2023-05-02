@@ -25,6 +25,7 @@ const showLightbox = (name, img ) => {
   // Showing lightbox and setting img source and name
   lightbox.querySelector("img").src = img;
   lightbox.querySelector("span").innerText = name;
+  downloadImgBtn.setAttribute("data-img", img) // Storing the image url as a btn attribute, so we can download it later
   lightbox.classList.add("show");
   document.body.style.overflow = "hidden"; // Hide the scrollbar while lightbox is shown
 }
@@ -92,3 +93,4 @@ getImages(`https://api.pexels.com/v1/curated?page=${currentPage}&per_page=${perP
 loadMoreBtn.addEventListener("click",loadMoreImages);
 searchInput.addEventListener("keyup",loadSearchImages);
 closeBtn.addEventListener("click", hideLightbox);
+// downloadImgBtn.addEventListener("click", () =>);
