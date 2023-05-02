@@ -108,7 +108,7 @@
   }
 
   .photographer {
-    color: #000000; /*Change to white */
+    color: #fff;
     display: flex;
     align-items: center;
   }
